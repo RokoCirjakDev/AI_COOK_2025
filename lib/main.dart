@@ -3,7 +3,7 @@ import 'novi.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'recept.dart';
 void main() {
-  Gemini.init(apiKey: '');
+  Gemini.init(apiKey: 'AIzaSyD18Rmm1gGqt3Pyx6TkIxJeqd5EvtC68eo');
  
   runApp(const MainApp());
 }

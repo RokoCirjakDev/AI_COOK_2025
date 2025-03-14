@@ -14,19 +14,27 @@ class ReceptScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Recept:',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            children: [
+            Expanded(
+              child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                Text(
+                  'Recept:',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  recept,
+                  style: TextStyle(fontSize: 16),
+                ),
+                ],
+              ),
+              ),
             ),
-            SizedBox(height: 10),
-            Text(
-              recept,
-              style: TextStyle(fontSize: 16),
-            ),
-          ],
+            ],
         ),
-      ),
-    );
+        ) ); 
   }
 }

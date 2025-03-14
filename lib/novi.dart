@@ -39,7 +39,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 widget.addTaskCallback(_sastojak.text, _kolicina.text);
                 Navigator.pop(context);
               },
-              child: Text('Add Task'),
+              child: Text('Add Sastojak'),
             ),
           ],
         ),
